@@ -15,4 +15,4 @@ Overall Rough Draft Score: 23 / 30
 * [ 2 / 2] At least 2 functions
 * [ 0 / 4] 2 calls to each function
 * [ 2 / 2] At least one function has a parameter
-* [ 1 / 2] At least 2 different arguments supplied for that parameter
+* [ 1 / 2] At least 2 different arguments supplied for that parameter (parameter with a different value)

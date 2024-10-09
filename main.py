@@ -13,12 +13,13 @@ field_width = 250 # Possible values: 200, 250, 300
 fieldgoal_width = 25 # Possible values: 20, 25, 30
 fieldgoal_height = 50 # Possible values: 40, 50, 60
 
+draw_yard_marker(4)
+
 for i in range(2):
         forward(field_length)
         left(90)
         forward(field_width)
         left(90)
-
 
 def draw_rectangle(length, width, color_name, distance):
     penup()
@@ -84,70 +85,7 @@ right(90)
 forward(45)
 pendown()
 
-#yard markers
-left(90)
-forward(field_width)
-penup()
-backward (field_width)
-right(90)
-forward(45)
-pendown()
-
-left(90)
-forward(field_width)
-penup()
-backward (field_width)
-right(90)
-forward(45)
-pendown()
-
-left(90)
-forward(field_width)
-penup()
-backward (field_width)
-right(90)
-forward(45)
-pendown()
-
-left(90)
-forward(field_width)
-penup()
-backward (field_width)
-right(90)
-forward(45)
-pendown()
-
-left(90)
-forward(field_width)
-penup()
-backward (field_width)
-right(90)
-forward(45)
-pendown()
-
-left(90)
-forward(field_width)
-penup()
-backward (field_width)
-right(90)
-forward(45)
-pendown()
-
-left(90)
-forward(field_width)
-penup()
-backward (field_width)
-right(90)
-forward(45)
-pendown()
-
-left(90)
-forward(field_width)
-penup()
-backward (field_width)
-right(90)
-forward(45)
-pendown()
+draw_yard_marker(8)
 
 forward(50)
 left(90)
@@ -168,8 +106,6 @@ backward(45)
 left(90)
 backward(115)
 pendown()
-
-draw_rectangle
 
 color("black")
 forward(field_width)
@@ -341,5 +277,6 @@ left(90)
 forward(25)
 left(90)
 forward(25)
+
 
 exitonclick()

@@ -13,7 +13,6 @@ field_width = 250 # Possible values: 200, 250, 300
 fieldgoal_width = 25 # Possible values: 20, 25, 30
 fieldgoal_height = 50 # Possible values: 40, 50, 60
 
-draw_yard_marker(4)
 
 for i in range(2):
         forward(field_length)
@@ -56,6 +55,14 @@ forward(50)
 end_fill()
 penup()
 forward(field_length)
+
+def draw_yard_marker(loops):
+    for i in range(loops):
+         left(90)
+         forward(field_width)
+         backward (field_width)
+         right(90)
+         forward(45)
 
 pendown()
 forward(50)
@@ -255,7 +262,6 @@ forward(45)
 left(90)
 forward(field_width)
 end_fill()
-
 
 penup()
 right(90)
